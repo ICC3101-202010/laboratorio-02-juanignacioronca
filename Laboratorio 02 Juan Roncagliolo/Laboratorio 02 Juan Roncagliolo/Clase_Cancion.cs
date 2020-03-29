@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_02_Juan_Roncagliolo
 {
-    class Clase_Cancion
+    public class Clase_Cancion 
     {
+
         public string Nombre;
-        public string Album;
         public string Artista;
+        public string Album;
         public string Genero;
 
         public string Informacion()
@@ -19,7 +20,7 @@ namespace Laboratorio_02_Juan_Roncagliolo
             string Al = Album;
             string Ar = Artista;
             string G = Genero;
-            string info = "Genero: "+G+", Artista: "+Ar+", Album: "+Al+", Nombre: "+N;
+            string info = "Nombre: "+N + ", Artista: " + Ar + ", Album: " + Al +", Genero: " + G+"\n";
             return info;
         }
     }
