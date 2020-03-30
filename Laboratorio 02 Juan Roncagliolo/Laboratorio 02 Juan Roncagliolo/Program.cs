@@ -42,10 +42,10 @@ namespace Laboratorio_02_Juan_Roncagliolo
                 {
                     Console.WriteLine("Bienvenido:\nIngrese su nombre para continuar:");
                     string nombre = Console.ReadLine();
-                    while (opcion != 3)
+                    while (opcion != 4)
                     {
                         Console.WriteLine("\nBienvenido: " + nombre + "\n");
-                        Console.WriteLine("-------Menu:-------\n1.Agregar Nueva Cancion:\n2.Ver Canciones:\n3.Salir:\n\nIngrese una opcion:");
+                        Console.WriteLine("-------Menu:-------\n1.Agregar Nueva Cancion:\n2.Ver Canciones:\n3.Canciones por Criterio\n4.Salir:\n\nIngrese una opcion:");
                         opcion = Convert.ToInt32(Console.ReadLine());
                         if (opcion == 1)
                         {
@@ -98,7 +98,16 @@ namespace Laboratorio_02_Juan_Roncagliolo
                             Console.WriteLine("Ver Canciones");
                             lista_1.VerCanciones(canciones);
                         }
-                        else if (opcion ==3)
+                        else if (opcion==3)
+                        {
+                            Console.WriteLine("Opciones de criterio:Nombre, Artista, Album, Genero.\nIngrese el criterio");
+                            string criterio = Console.ReadLine();
+                            Console.WriteLine("\nIngrese el valor:");
+                            string valor = Console.ReadLine();
+                            lista_1.CancionesPorCriterio(canciones,criterio, valor);
+
+                        }
+                        else if (opcion ==4)
                         {
                             break;
                         }
