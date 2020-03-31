@@ -104,6 +104,8 @@ namespace Laboratorio_02_Juan_Roncagliolo
                             string criterio = Console.ReadLine();
                             Console.WriteLine("\nIngrese el valor:");
                             string valor = Console.ReadLine();
+                            Console.WriteLine(canciones[1].Informacion());
+                            Console.ReadLine();
                             lista_1.CancionesPorCriterio(canciones,criterio, valor);
 
                         }

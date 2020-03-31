@@ -90,10 +90,13 @@ namespace Laboratorio_02_Juan_Roncagliolo
                     else
                     {
                         Console.WriteLine("ERROR INTENTE NUEVAMENTE");
+                        break;
                     }
                 }
                 else
-                {break;}
+                {
+                    Console.WriteLine("ERROR INTENTE NUEVAMENTE"); 
+                    break;}
             }
             for (int i = 0; i < ListaCancionesPorCriterio.Length; i++)
             {
